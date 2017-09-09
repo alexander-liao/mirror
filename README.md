@@ -13,3 +13,4 @@ Name | Function | Inverse
 `,`  | Take one line of input | `.`
 `.`  | Output the top of the stack | `,`
 `!`  | Skip the next command (alternatively, advance the pointer one extra time) | `!`
+`@`  | Does printing | mystery
