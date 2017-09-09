@@ -104,4 +104,6 @@ if __name__ == '__main__':
 				print()
 			except EOFError:
 				break
-		print(format_str(interpret(list(map(list, code)))))
+	else:
+		code = open(sys.argv[1], 'r').read().split('\n')
+	print(format_str(interpret(list(map(list, code)))))
