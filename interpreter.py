@@ -89,8 +89,9 @@ def interpret(grid, stack = []):
 				modifier = 0
 		advance(pointer, grid)
 
-def format_str(output):
-	return str(output)
+def print_str(output):
+	if output:
+		print(output[0])
 
 if __name__ == '__main__':
 	import sys
@@ -106,4 +107,4 @@ if __name__ == '__main__':
 				break
 	else:
 		code = open(sys.argv[1], 'r').read().split('\n')
-	print(format_str(interpret(list(map(list, code)))))
+	print_str(interpret(list(map(list, code))))
